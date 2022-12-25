@@ -88,10 +88,14 @@ def download_one_dataset_file(file_url):
 
 with open("D:\\weatherdata\\s2sdatafiles.txt") as fin:
     for i, line in enumerate(fin):
-        if i % 4 != 3 or i<=1631:
+        if i % 4 != 1 or i<=1605:
             continue
         downloaded = download_one_dataset_file(line.strip())
         print(f"{i}:{downloaded}")
 
 
 # In[ ]:
+
+
+
+
